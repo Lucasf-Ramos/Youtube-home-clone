@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a11b8c2525.js" crossorigin="anonymous"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    
+    <title>Document</title>
+    <script>
+        function randomTitle(){
+
+                function randomTitle() {
+                    const prefixes = ["Amazing", "Awesome", "Epic", "Fantastic", "Incredible"];
+                    const topics = ["Cats", "Technology", "Travel", "Cooking", "Gaming"];
+                    const suffixes = ["Explained", "Tutorial", "Review", "Journey", "Adventure"];
+
+                    const randomPrefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+                    const randomTopic = topics[Math.floor(Math.random() * topics.length)];
+                    const randomSuffix = suffixes[Math.floor(Math.random() * suffixes.length)];
+
+
+                    return `${randomPrefix} ${randomTopic} ${randomSuffix}`;
+                }
+                function generateChannelName(title) {
+                const [prefix, suffix] = title.split(' ');
+                return `${prefix}${suffix}s`;
+                }
+
+
+                // Seleciona todos os elementos com a classe "title"
+                const titleElements = document.querySelectorAll('.title');
+
+                // Para cada elemento, define um título aleatório
+                titleElements.forEach((element) => {
+                    const randomizedTitle = randomTitle();
+                    element.textContent = randomizedTitle;
+
+                    const channelElement = element.nextElementSibling.nextElementSibling;
+                    channelElement.textContent = generateChannelName(randomizedTitle);
+                });
+        }
+
+    </script>
+</head>
+<body onload="randomTitle()">
+    <div class="header">
+        <div id="topLeft">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-brands fa-youtube" ><span>YouTube</span></i>
+        </div>
+
+        <div id="pesquisaBar">
+            <input type="text" name="" id="barraDePesquisa" placeholder="Pesquisar">
+            <button id="pesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div id="mic">
+                <i class="fa-solid fa-microphone" style="margin-top: 30%;"></i>
+            </div>
+
+        </div>
+        
+
+        <div id="topRight">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+
+    <div class="content"><div class="article">
+        <br>
+        <i class="fa-solid fa-house"></i><br><br>
+        <i class="fa-solid fa-fire"></i><br><br>
+        <i class="fa-solid fa-video"></i><br><br>
+        <i class="fa-solid fa-folder"></i><br><br>
+
+    </div>
+    <div class="main">
+        
+        <h2>Mais recentes</h2>
+            <div id="videosContent" style="display: flex; flex-wrap: wrap; justify-content:left; ">
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+                <div class="video">
+                    <img src="https://source.unsplash.com/random/300x170?sig=1" alt="" class="capa"><br><br>
+
+                  
+                        <img src="https://source.unsplash.com/random/500x500?sig=2" alt="" class="profile">
+                       
+                   
+                    <span class="title"></span><br>
+                    <span class="channel infs"></span><br>
+                    <span class="infs">3 mil visualizações
+                        há 1 hora</span>
+                </div>
+            </div>
+
+                
+    </div></div>
+    
+   
+
+</body>
+</html>

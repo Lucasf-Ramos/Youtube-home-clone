@@ -1,0 +1,127 @@
+body{
+    background-color: rgba(18,18,18,255);
+    color:aliceblue;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.layout {
+    width: 1366px;
+    height: 768px;
+  
+    display: grid;
+    grid:
+      "header header header" auto
+      "article main ." 1fr
+      "footer footer footer" auto
+      / auto 1fr auto;
+    gap: 8px;
+  }
+  
+  .header {
+        grid-area: header;
+       
+        display: flex;
+        justify-content: space-between;
+
+        padding: 2%;
+    }
+  .article { grid-area: article;}
+  .main { grid-area: main;}
+  .footer { grid-area: footer; }
+
+  #pesquisaBar{
+     display: flex;
+     width: 50%;
+     margin-top: -2%;
+    
+    }
+    #barraDePesquisa{
+        border-top-left-radius: 60px;
+        border-bottom-left-radius: 60px;    
+        background-color: #121212;
+        border-color: #313131;
+        border-width: 1px;
+        border-style:solid;
+        color: #a0a0a0;
+   
+        padding: 2%;
+        width: 100%;
+    }
+    #pesquisa{
+        border-top-right-radius: 60px;
+        border-bottom-right-radius: 60px;
+        background-color: #222222;
+        border-color: #313131;
+        border-width: 1px;
+        border-style:solid;
+        color: #a0a0a0;
+        width: 10%;
+
+    }
+
+    #mic{
+        background-color: #222222;
+        border-radius: 100%;
+        width: 8%;
+        height: 100%;
+        text-align: center;
+     
+        margin-left: 2%;
+    
+    }
+
+    #topLeft{
+        margin-top: -1%;
+        font-size: 150%;
+        display: flex;
+        gap: 50%;
+   
+        align-items: start;
+      
+    }
+    #topRight{
+        width: 4%;
+        display: flex;
+        gap: 30%;
+        margin-right: 1%;
+    }
+
+    i{transition: 0.01s;}
+    i:hover{
+        color:rgb(255, 43, 85);
+    }
+    .fa-youtube span{color:aliceblue; font-size: 90%; margin: 7%;   font-family: "Times New Roman", Times, serif;}
+
+
+    .article
+    {
+       
+        width: 5%;
+        height: 100px;
+        -webkit-text-stroke: 1px aliceblue;
+        margin-left: 2%;
+     
+    }
+
+    .article i{margin: 1%; padding: 1%; display: flex; flex-direction: column; color:transparent; transition: 0.5s; width: 1.7%;}
+    .article i:hover{background-color: #313131; border-radius: 10px;}
+
+    .content{
+        display: flex;
+    
+    }
+
+    .main{
+       width: 100%;
+      
+        padding-left: 3%;
+    }
+
+
+.video{width: 20%; margin-bottom: 1%;} 
+    
+    .firstLine{display: flex; align-items: start; flex-wrap: wrap; }
+    .capa{grid-area: video; border-radius: 10px;}
+    .profile{grid-area: prof; width: 6%; border-radius: 100%; float: left;}
+    .title{grid-area: title; margin: 1%; font-weight: bold;}
+    .infs{grid-area: inf; margin-left: 1%; color: #a0a0a0;}
